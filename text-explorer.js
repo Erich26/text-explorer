@@ -6,9 +6,8 @@ let x = 0;
 let y = 0;
 
 // current location and actions changing location
-while (true) {
+while (x <=3 && y <=4)  {
   
-
   const action = prompt('Would you like to go north, south, east, or west? ');
 
   if ( action === 'north' ) {
@@ -30,6 +29,8 @@ while (true) {
 // if statements to add depth to the map and game
    if (x === -1 && y === -1) {
    console.log('Each step brings you closer to the edge of the Sanctuary Forest.');
+   }else if (x === 0 && y === 1) {
+    console.log('Each step brings you closer to the edge of the Sanctuary Forest.');
    }else if (x === 1 && y === 1) {
     console.log('Each step brings you closer to the edge of the Sanctuary Forest.');
    }else if (x === -1 && y === 1) {
@@ -78,6 +79,8 @@ while (true) {
     console.log('A great fire breathing dragon has come forth, it bows to those who wield the blade of light and guides them east. All else meet a gruesome fate.')
    }else if (x === 4 && y === 3) {
        console.log('Congratulations, the eternal flame and immortality is yours!')
+   }else {
+       console.log('You have fallen into a sinkhole, start over.')
    }
 
 
